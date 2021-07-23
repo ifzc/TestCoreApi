@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  testcoreapi:
+    image: ${DOCKER_REGISTRY-}testcoreapi
+    build:
+      context: .
+      dockerfile: Dockerfile
